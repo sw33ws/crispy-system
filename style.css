@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --white: aliceblue;
+    --font-family: Arial, Helvetica, sans-serif;
+    --brown: rgb(61, 26, 26);
+    --blueborder: rgb(34, 56, 255);
+}
+
+body {
+    background-color: var(--white);
+}
+
+header {
+    color: var(--white);
+    font-family: var(--font-family);
+    background-color: var(--brown);
+    padding: 30px;
+}
+
+header nav h1 {
+    font-size: 200%;
+    display: inline-block;
+}
+
+header nav ul {
+    list-style-type: none;
+    float: right;
+    padding-top: 15px;
+    margin-right: 50px;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    text-decoration: underline;
+}
+
+@media(max-width: 700px) {
+    header nav ul li {
+        display:inline;
+    }
+}
+
+/*About Me */
+
+.about-me {
+    display: flex;
+    background-color: rgb(206, 230, 252);
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    justify-content: center;
+}
+
+.about-me h2, p {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.about-me p {
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.about-me img {
+    width: 25%;
+    height: 25%;
+}
+
+/*My Work */
+
+.work {
+    margin: auto;
+    padding-top: 100px;
+}
+.work h1 {
+    font-size: 200%;
+    font-weight: 600;
+    text-align: center;
+}
+
+/*big image */
+.Big-Img {
+    display: flex;
+    justify-content: center;
+}
+
+/*smaller img */
+.Small-Img {
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    justify-content: space-around;
+}
+
+.blue-eyes img{
+    width: 455px;
+    height: 200px;
+}
+
+.git-page img{
+    width: 455px;
+    height: 200px;
+}
+
+/*footer */
+.footer {
+    text-align: center;
+    background-color: var(--brown);
+    padding: 30px;
+    font-family: var(--font-family);
+    color: var(--white);
+}
+
+.footer ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 50px;
+}
